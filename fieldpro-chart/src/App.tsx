@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import "./App.css";
-import ChartComponent from "./Graphics/Graphics";
+import GrowthStage from "./Graphics/Graphics";
 import axios from "axios";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <div style={{ display: "flex" }} className="teste">
-        <ChartComponent data={data} />
+        <GrowthStage data={data} />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ interface DataEntry {
   ndvi: number;
 }
 
-const ChartComponent: React.FC<{ data: DataEntry[] }> = ({ data }) => {
+const GrowthStage: React.FC<{ data: DataEntry[] }> = ({ data }) => {
   const colors: string[] = ["#126ede", "#91CC75", "#ed9121"];
 
   const [chartInstance, setChartInstance] = useState<echarts.ECharts | null>(
@@ -163,4 +163,4 @@ const ChartComponent: React.FC<{ data: DataEntry[] }> = ({ data }) => {
   );
 };
 
-export default ChartComponent;
+export default GrowthStage;
